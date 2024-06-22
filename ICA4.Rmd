@@ -1,0 +1,127 @@
+---
+title: "ICA4"
+author: "Jonathan Thompson"
+date: "03/11/2024"
+output: pdf_document
+---
+
+Question 1
+
+You are given data on people watching streaming tv. You know the age of the person, their income, and if they received a coupon for the service. You can also know the number of streaming hours for each person during a given week. Use the dataset "streaming_data.RData" for this question.
+
+
+a) Find the descriptive statistics of the dataset.(i.e use data summary)
+
+```{r warning=FALSE, message=FALSE, eval=TRUE}
+
+load("C:\\Users\\catho\\OneDrive\\Documents\\AAT\\streaming_data.RData")
+
+library(modelsummary)
+
+library(AER)
+
+stream <- data.frame(age, coupon, income, streaminghours)
+View (stream)
+names(stream)
+
+names(stream) <-c("Age", "Coupon", "Income", "Streaming Hours")
+
+stream$`Income per 10K` <-stream$Income/10000
+
+library(modelsummary)
+datasummary_skim(stream)
+```
+
+b) Run OLS on the dataset.Estimate a model of streaming hours on the explanatory variables.
+
+```{r eval=TRUE}
+
+reg1 <- lm(`Streaming Hours` ~ Age + Coupon + `Income per 10K`, data = stream)
+
+```
+
+c) Notice that the number of streaming hours cannot be negative. Run a Tobit model to estimate streaming hours.
+
+```{r eval=TRUE}
+
+library(AER)
+reg2 <-tobit(`Streaming Hours` ~ Age +Coupon +`Income per 10K`, data=stream)
+
+modelsummary(list("OLS"=reg1, "Tobit"= reg2), stars=TRUE)
+
+```
+
+
+d) What are the differences between c and a?
+Answer: Question A presents basic descriptive statistics such as mean and standard deviation while Question C presents two specific models in comparison to each other, focusing mainly on Tobit. Some of these measures for OLS & Tobit comparisons include R2, Log Likelihood and P Values. Tobit models also estimate the impact of independent variables while summary measures from Question A do not. Additionally, the Tobit Model focuses on measures of the linear effect of the latent variable that isn't censored while Question A only outputs summary measures. The difference in outputs lie in the depth of analysis and information provided. In conclusion, there can be more statistical significance that can be explained for the output in Question C vs. in the output in Question A. 
+
+
+e) What is the marginal effect of coupons?
+
+```{r eval=TRUE}
+library(censReg)
+estResult <- censReg(`Streaming Hours` ~ Age + Coupon + `Income per 10K`, data=stream)
+knitr::kable(margEff(estResult))
+
+```
+
+
+
+Question 2
+
+---Selection Model--
+
+In this analysis, you will use customer level data on travel expenditures. You will observe the following variables. Use the dataset "tour_data.RData" for this question.
+
+Variables | Description
+----------|-------------
+income | Household income
+education | Education level of the household head
+health | Health status index of the household members
+tripweather | Weather quality in the destination of the trip
+participation | Dummy variable for tourism participation
+expenditure | Total household tourism expenditure
+
+
+a) Estimate a regression model of expenditures on income, education, and tripweather.
+
+```{r eval=TRUE}
+
+load("C:\\Users\\catho\\OneDrive\\Documents\\AAT\\tour_data.RData")
+
+View (tourexp)
+
+names(tourexp)
+
+names(tourexp) <-c("Income", "Education", "Health", "Trip Weather", "Participation", "Expenditure")
+
+reg3 <-lm(Expenditure ~ Income + Education +`Trip Weather`, data=tourexp)
+
+
+```
+
+
+
+b) Estimate a probit model on participation using income, education, and health
+
+```{r warning=FALSE, message=FALSE, eval=TRUE}
+reg4 <-glm(Participation ~ Income+Education+Health, data=tourexp, family=binomial(link ="probit"))
+
+```
+
+
+c) Estimate a sample selection model of tourism expenditures.
+
+```{r  eval=TRUE}
+library(sampleSelection)
+reg5 <-heckit(Participation ~ Income + Education + Health, Expenditure ~ Income+Education +`Trip Weather`, data=tourexp, method ="2step")
+
+modelsummary(list("Seletion Probit"=reg5$probit, "Selection Linear"=reg5$lm),stars=TRUE, coef_rename = c("XS(Intercept)"="Intercept", "XO(Intercept)"="Intercept"))
+
+modelsummary(list("Expenditure Probit"=reg3, "Participation Probit"=reg4, "Selection Probit"=reg5$probit, "Selection Linear"=reg5$lm),  stars=TRUE, coef_rename = c("Income"="Income", "Education"="Education", "Trip Weather"="Trip Weather", "Health"="Health","XSIntercept"="XS (Intercept)", "XSIncome"="XS (Income)", "XSEducation"="XS (Education)", "XSHealth"="XS(Health)","XOIntercept"="XO (Intercept)","XOIncome"="XO(Income)", "XOEducation"="XO (Education)", "XOTrip Weather"="XO (Trip Weather)", "imrData$IMR1"="IMR"))
+```
+
+
+d) Compare your estimates in a) and c). Do you detect sample selection bias? How do you know? 
+Answer: There is evidence of sample selection bias and its positive. The p value is also significant and is very far from 0. Additionally, the Mills Ratio value at 796.6281 is very far from  0 which indicates positive bias.
+
