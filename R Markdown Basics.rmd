@@ -1,0 +1,56 @@
+---
+title: "My First R Markdown Document"
+author: "Nick Holt"
+date: "December 5, 2020"
+output: html_document
+---
+
+
+## Two hashes denote a new section
+Any text that you type in a normal way will be displayed as plain text. This is where you might write the body of your document.
+
+> To offset text in a block quote simply use the greater than symbol before the line of text.
+  
+> Including a double space will offset even more.
+
+*Italics are added by including the asterisk symbol before and after your text.*
+
+Bullets can be added as well.
+
+* Use an asterisk, and a space to add bullets
+* **emphasis** can be added by including two asterisks:
+  
+  * and sub bullets can be added with a double space and asterisk
+  
+  * like so
+
+You can add subscript by using math notation (place $ before and after the text)
+Here is a subscript example: 
+
+* $H_0:$ R Markdown is amazing
+* $H_1:$ R Markdown is scary and difficult
+
+
+```{r}
+
+```
+
+
+ctrl + alt + i will add a chunk of code automatically
+
+```{r}
+plot(iris)
+```
+
+R markdown can embed your output seamlessly with your code and your writeup.
+
+Let's make the plot smaller by adding fig.width and fig.height to our code chunk
+
+```{r fig.width = 5, fig.height = 5.5}
+plot(iris)
+```
+
+Here is a good [resource](www.youtube.com/watch?v=LIIC8cViC54)
+
+
+There is a lot more we can learn. Anything you need can be found with a quick google search.

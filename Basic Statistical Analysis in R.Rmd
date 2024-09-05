@@ -1,0 +1,262 @@
+---
+title: "Basic Statistical Analysis in R"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Statistical Tests
+This Rmarkdown document demonstrates how to implement some of the most commonly used statistical tests in R.
+
+## 1. One Sample t-Test
+### Why is it used?
+It is a parametric test used to test if the mean of a sample from a normal distribution could reasonably be expected to occur by chance.
+
+```{r}
+set.seed(100)
+x <- rnorm(50, mean = 10, sd = 0.5)
+t.test(x, mu=10) # testing if mean of x could be
+```
+
+
+#### How to interpret?
+In above case, the p-Value is not less than significance level of 0.05, therefore the null hypothesis that the mean = 10 cannot be rejected. Also note that the 95% confidence interval range includes the value 10 within its range. So, it is okay to say the mean of ‘x’ is 10, especially since ‘x’ is assumed to be normally distributed. In case a normal distribution is not assumed, use the wilcoxon signed rank test shown in next section.
+
+Note: Use conf.level argument to adjust the confidence level.
+
+## 2. Wilcoxon Signed Rank Test
+### Why / When is it used?
+To test the mean of a sample when normal distribution is not assumed. Wilcoxon signed rank test can be an alternative to t-Test, especially when the data sample is not assumed to follow a normal distribution. It is a non-parametric method used to test if an estimate is different from its true value.
+
+```{r}
+numeric_vector <- c(20, 29, 24, 19, 20, 22, 28, 23, 19, 19)
+wilcox.test(numeric_vector, mu = 20, conf.int = TRUE)
+```
+
+#### How to interpret?
+If p-Value < 0.05, reject the null hypothesis and accept the alternate mentioned in your R code’s output. Type example(wilcox.test) in R console for more illustration.
+
+## 3. Two Sample t-Test and Wilcoxon Rank Sum Test
+Both t.Test and Wilcoxon rank test can be used to compare the mean of 2 samples. The difference is the t-test assumes the samples being tested are drawn from a normal distribution, while, Wilcoxon’s rank sum test does not.
+
+### How to implement in R?
+Pass the two numeric vector samples into the t.test() when sample is distributed normally and wilcox.test() when it isn’t assumed to follow a normal distribution.
+
+```{r}
+x <- c(0.80, 0.83, 1.89, 1.04, 1.45, 1.38, 1.91, 1.64, 0.73, 1.46)
+y <- c(1.15, 0.88, 0.90, 0.74, 1.21)
+wilcox.test(x, y, alternative = "g")  # g for greater
+```
+
+With a p-Value of 0.1262, we cannot reject the null hypothesis that both x and y have same means.
+
+```{r}
+options(scipen = 999) # turns off scientific notation
+
+t.test(1:10, y = c(7:20))
+```
+
+With p-Value < 0.05, we can safely reject the null hypothesis that there is no difference in mean.
+
+#### What if we want to do a 1-to-1 comparison of means for values of x and y?
+```{r}
+# Use paired = TRUE for 1-to-1 comparison of observations.
+x <- rnorm(100)
+y <- rnorm(100)
+
+t.test(x, y, paired = TRUE) # when observations are paired, use 'paired' argument.
+
+wilcox.test(x, y, paired = TRUE) # both x and y are assumed to have similar shapes
+```
+
+#### When can I conclude if the mean’s are different?
+Conventionally, If the p-Value is less than significance level (ideally 0.05), reject the null hypothesis that both means are the are equal.
+
+## 4. Shapiro Test
+
+### Why is it used?
+To test if a sample follows a normal distribution.
+
+```{r}
+numeric_vector <- c(20, 29, 24, 19, 20, 22, 28, 23, 19, 19)
+
+shapiro.test(numeric_vector) # Does our data follow a normal distribution?
+```
+
+Lets see how to do the test on a sample from a normal distribution.
+
+```{r}
+# Example: Test a normal distribution
+set.seed(100)
+
+normaly_disb <- rnorm(100, mean=5, sd=1) # create a simulated data set from a normal distribution
+
+shapiro.test(normaly_disb)  # the shapiro test.
+```
+
+### How to interpret?
+The null hypothesis here is that the sample being tested is normally distributed. Since the p-value is not less that the significance level of 0.05, we don’t reject the null hypothesis. Therefore, the tested sample is confirmed to follow a normal distribution (though, we already know that since we simulated data from a normal distribution!).
+
+```{r}
+# Example: Test a uniform distribution
+set.seed(100)
+
+not_normaly_disb <- runif(100)  # uniform distribution.
+
+shapiro.test(not_normaly_disb)
+```
+
+### How to interpret?
+The null-hypothesis is that the data are normally distributed, so if the p-Value is less than the significance level of 0.05, we can conclude that the data are not derived from random variable that follows a normal distribution.
+
+## 6. Fisher’s F-Test
+Fisher’s F test can be used to check if two samples have same variance.
+
+```{r}
+var.test(x, y)  # Do x and y have the same variance?
+```
+
+Alternatively fligner.test() and bartlett.test() can be used for the same purpose.
+
+## 7. Chi Squared Test
+Chi-squared test in R can be used to test if two categorical variables are dependent, by means of a contingency table.
+
+### Analyzing two or more categorical variables
+* The mean of a categorical variable is meaningless
+
+* The numeric values you attach to different categories are arbitrary
+
+* The mean of those numeric values will depend on how many members each category has
+
+Therefore, we analyze frequencies
+
+### An example
+Can animals be trained to line-dance with different rewards?
+
+* Participants: 200 cats
+
+* Training
+
+  * The animal was trained using either food or affection, not both)
+
+* Test: Can they dance?
+
+  * The animal either learned to line-dance or it did not
+  
+* Outcome:
+
+  * The number of animals (frequency) that could dance or not in each reward condition
+
+We can tabulate these frequencies in a contingency table
+
+
+```{r}
+options(scipen = 999)
+cats <- read.csv("cats.csv")
+
+tbl <- table(cats$reward, cats$dance)
+
+tbl
+
+chisq.test(tbl)
+
+chisq.test(tbl, correct = FALSE) # Yates continuity correction not applied
+
+# or 
+summary(tbl) # performs a chi-squared test.
+```
+
+### How to tell if x, y are independent?
+There are two ways to tell if they are independent:
+
+By looking at the p-Value: If the p-Value is less that 0.05, we fail to reject the null hypothesis that the x and y are independent. So for the example output above, we reject the null hypothesis and conclude that whether or not a cat learns to dance is dependent on the type of reward given during training.
+
+## 8. Correlation
+
+### Why is it used?
+To test the linear relationship of two continuous variables
+
+The cor.test() function computes the correlation between two continuous variables and test if the y is dependent on the x. The null hypothesis is that the true correlation between x and y is zero.
+
+```{r}
+# use cor.test(x, y) # where x and y are numeric vectors.
+cor.test(cars$speed, cars$dist)
+```
+
+### How to interpret?
+If the p Value is less than 0.05, we reject the null hypothesis that the true correlation is zero (i.e. they are independent). So in this case, we reject the null hypothesis and conclude that dist is dependent on speed.
+
+## 9. Basic Data Analysis
+
+The skim() function from the skimr package is great for quickly skimming the exporatory statistics for a data set.
+```{r cars}
+library(skimr)
+skim(cars)
+```
+
+Now let's build a scatterplot to understand the relationship between speed and distance.
+
+```{r}
+library(tidyverse)
+
+cars %>% 
+        ggplot(aes(speed, dist)) +
+        geom_point()
+```
+
+We already found a significant correlation between the two variables. Let's build a regression model to predict dist using speed.
+
+
+### Building a linear model
+The function used for building linear models is lm(). The lm() function takes in two main arguments, namely: 1. Formula 2. Data. The data is typically a data.frame and the formula is a object of class formula. But the most common convention is to write out the formula directly in place of the argument as written below.
+
+```{r}
+linearMod <- lm(dist ~ speed, data = cars)  # build linear regression model on full data
+print(linearMod)
+```
+
+Now that we have built the linear model, we also have established the relationship between the predictor and response in the form of a mathematical formula for Distance (dist) as a function of speed.
+
+### Checking diagnostics
+Now the linear model is built and we have a formula that we can use to predict the dist value if a corresponding speed is known. But just because we can build a model doesn't mean it is a good model. Let's check some of the diagnostic statistics.
+
+```{r}
+summary(linearMod)
+
+library(car)
+residualPlot(linearMod)
+```
+
+### Building model predictions
+We can use our model to generate predicted values for each of the observations in our dataset.
+
+```{r}
+data <- as_tibble(cars) %>% 
+        mutate(predicted_dist = predict(linearMod, cars)) 
+
+# let's check that the variable was created successfully
+top_n(data, 10)
+```
+
+### Plotting the predicted vs. actual values of dist
+No that we have built a model and used it to make predictions on our dataset, we should look at the predicted values in a plot to compare them to the acutal observations.
+
+Here is a plot of our variables with a line representing our model's predicted values.
+```{r}
+ggplot(data, aes(speed, dist)) +
+        geom_point() +
+        geom_smooth(method = "lm")
+```
+
+We can layer in the predicted values as data points like so:
+```{r}
+data %>% 
+        gather("type", "dist", -speed) %>% 
+        ggplot(aes(speed, dist)) +
+        geom_smooth(method = "lm", color = "black") +
+        geom_point(aes(color = type),
+                   size = 3,) +
+        theme_bw()
+        
+```
+

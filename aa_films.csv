@@ -1,0 +1,514 @@
+Year,Film,winner,Film_ID
+1927,Wings,1,1001
+1927,7th Heaven,0,1002
+1927,The Racket,0,1003
+1928,The Broadway Melody,1,1004
+1928,Alibi,0,1005
+1928,Hollywood Revue,0,1006
+1928,In Old Arizona,0,1007
+1928,The Patriot,0,1008
+1929,All Quiet on the Western Front,1,1009
+1929,The Big House,0,1010
+1929,Disraeli,0,1011
+1929,The Divorcee,0,1012
+1929,The Love Parade,0,1013
+1930,Cimarron,1,1014
+1930,East Lynne,0,1015
+1930,The Front Page,0,1016
+1930,Skippy,0,1017
+1930,Trader Horn,0,1018
+1931,Grand Hotel,1,1019
+1931,Arrowsmith,0,1020
+1931,Bad Girl,0,1021
+1931,The Champ,0,1022
+1931,Five Star Final,0,1023
+1931,One Hour with You,0,1024
+1931,Shanghai Express,0,1025
+1931,The Smiling Lieutenant,0,1026
+1932,Cavalcade,1,1027
+1932,42nd Street,0,1028
+1932,A Farewell to Arms,0,1029
+1932,I Am a Fugitive from a Chain Gang,0,1030
+1932,Lady for a Day,0,1031
+1932,Little Women,0,1032
+1932,The Private Life of Henry VIII,0,1033
+1932,She Done Him Wrong,0,1034
+1932,Smilin' Through,0,1035
+1932,State Fair,0,1036
+1934,It Happened One Night,1,1037
+1934,The Barretts of Wimpole Street,0,1038
+1934,Cleopatra,0,1039
+1934,Flirtation Walk,0,1040
+1934,The Gay Divorcee,0,1041
+1934,Here Comes the Navy,0,1042
+1934,The House of Rothschild,0,1043
+1934,Imitation of Life,0,1044
+1934,One Night of Love,0,1045
+1934,The Thin Man,0,1046
+1934,Viva Villa!,0,1047
+1934,The White Parade,0,1048
+1935,Mutiny on the Bounty,1,1049
+1935,Alice Adams,0,1050
+1935,Broadway Melody of 1936,0,1051
+1935,Captain Blood,0,1052
+1935,David Copperfield,0,1053
+1935,The Informer,0,1054
+1935,The Lives of a Bengal Lancer,0,1055
+1935,A Midsummer Night's Dream,0,1056
+1935,Les Misérables,0,1057
+1935,Naughty Marietta,0,1058
+1935,Ruggles of Red Gap,0,1059
+1935,Top Hat,0,1060
+1936,The Great Ziegfeld,1,1061
+1936,Anthony Adverse,0,1062
+1936,Dodsworth,0,1063
+1936,Libeled Lady,0,1064
+1936,Mr. Deeds Goes to Town,0,1065
+1936,Romeo and Juliet,0,1066
+1936,San Francisco,0,1067
+1936,The Story of Louis Pasteur,0,1068
+1936,A Tale of Two Cities,0,1069
+1936,Three Smart Girls,0,1070
+1937,The Life of Emile Zola,1,1071
+1937,The Awful Truth,0,1072
+1937,Captains Courageous,0,1073
+1937,Dead End,0,1074
+1937,The Good Earth,0,1075
+1937,In Old Chicago,0,1076
+1937,Lost Horizon,0,1077
+1937,One Hundred Men and a Girl,0,1078
+1937,Stage Door,0,1079
+1937,A Star Is Born,0,1080
+1938,You Can't Take It with You,1,1081
+1938,The Adventures of Robin Hood,0,1082
+1938,Alexander's Ragtime Band,0,1083
+1938,Boys Town,0,1084
+1938,The Citadel,0,1085
+1938,Four Daughters,0,1086
+1938,Grand Illusion,0,1087
+1938,Jezebel,0,1088
+1938,Pygmalion,0,1089
+1938,Test Pilot,0,1090
+1939,Gone with the Wind,1,1091
+1939,Dark Victory,0,1092
+1939,"Goodbye, Mr. Chips",0,1093
+1939,Love Affair,0,1094
+1939,Mr. Smith Goes to Washington,0,1095
+1939,Ninotchka,0,1096
+1939,Of Mice and Men,0,1097
+1939,Stagecoach,0,1098
+1939,The Wizard of Oz,0,1099
+1939,Wuthering Heights,0,1100
+1940,Rebecca,1,1101
+1940,"All This, and Heaven Too",0,1102
+1940,Foreign Correspondent,0,1103
+1940,The Grapes of Wrath,0,1104
+1940,The Great Dictator,0,1105
+1940,Kitty Foyle,0,1106
+1940,The Letter,0,1107
+1940,The Long Voyage Home,0,1108
+1940,Our Town,0,1109
+1940,The Philadelphia Story,0,1110
+1941,How Green Was My Valley,1,1111
+1941,Blossoms in the Dust,0,1112
+1941,Citizen Kane,0,1113
+1941,Here Comes Mr. Jordan,0,1114
+1941,Hold Back the Dawn,0,1115
+1941,The Little Foxes,0,1116
+1941,The Maltese Falcon,0,1117
+1941,One Foot in Heaven,0,1118
+1941,Sergeant York,0,1119
+1941,Suspicion,0,1120
+1942,Mrs. Miniver,1,1121
+1942,The Invaders,0,1122
+1942,Kings Row,0,1123
+1942,The Magnificent Ambersons,0,1124
+1942,The Pied Piper,0,1125
+1942,The Pride of the Yankees,0,1126
+1942,Random Harvest,0,1127
+1942,The Talk of the Town,0,1128
+1942,Wake Island,0,1129
+1942,Yankee Doodle Dandy,0,1130
+1943,Casablanca,1,1131
+1943,For Whom the Bell Tolls,0,1132
+1943,Heaven Can Wait,0,1133
+1943,The Human Comedy,0,1134
+1943,In Which We Serve,0,1135
+1943,Madame Curie,0,1136
+1943,The More the Merrier,0,1137
+1943,The Ox-Bow Incident,0,1138
+1943,The Song of Bernadette,0,1139
+1943,Watch on the Rhine,0,1140
+1944,Going My Way,1,1141
+1944,Double Indemnity,0,1142
+1944,Gaslight,0,1143
+1944,Since You Went Away,0,1144
+1944,Wilson,0,1145
+1945,The Lost Weekend,1,1146
+1945,Anchors Aweigh,0,1147
+1945,The Bells of St. Mary's,0,1148
+1945,Mildred Pierce,0,1149
+1945,Spellbound,0,1150
+1946,The Best Years of Our Lives,1,1151
+1946,Henry V,0,1152
+1946,It's a Wonderful Life,0,1153
+1946,The Razor's Edge,0,1154
+1946,The Yearling,0,1155
+1947,Gentleman's Agreement,1,1156
+1947,The Bishop's Wife,0,1157
+1947,Crossfire,0,1158
+1947,Great Expectations,0,1159
+1947,Miracle on 34th Street,0,1160
+1948,Hamlet,1,1161
+1948,Johnny Belinda,0,1162
+1948,The Red Shoes,0,1163
+1948,The Snake Pit,0,1164
+1948,The Treasure of the Sierra Madre,0,1165
+1949,All the King's Men,1,1166
+1949,Battleground,0,1167
+1949,The Heiress,0,1168
+1949,A Letter to Three Wives,0,1169
+1949,Twelve O'Clock High,0,1170
+1950,All About Eve,1,1171
+1950,Born Yesterday,0,1172
+1950,Father of the Bride,0,1173
+1950,King Solomon's Mines,0,1174
+1950,Sunset Boulevard,0,1175
+1951,An American in Paris,1,1176
+1951,Decision Before Dawn,0,1177
+1951,A Place in the Sun,0,1178
+1951,Quo Vadis,0,1179
+1951,A Streetcar Named Desire,0,1180
+1952,The Greatest Show on Earth,1,1181
+1952,High Noon,0,1182
+1952,Ivanhoe,0,1183
+1952,Moulin Rouge,0,1184
+1952,The Quiet Man,0,1185
+1953,From Here to Eternity,1,1186
+1953,Julius Caesar,0,1187
+1953,The Robe,0,1188
+1953,Roman Holiday,0,1189
+1953,Shane,0,1190
+1954,On the Waterfront,1,1191
+1954,The Caine Mutiny,0,1192
+1954,The Country Girl,0,1193
+1954,Seven Brides for Seven Brothers,0,1194
+1954,Three Coins in the Fountain,0,1195
+1955,Marty,1,1196
+1955,Love Is a Many-Splendored Thing,0,1197
+1955,Mister Roberts,0,1198
+1955,Picnic,0,1199
+1955,The Rose Tattoo,0,1200
+1956,Around the World in 80 Days,1,1201
+1956,Friendly Persuasion,0,1202
+1956,Giant,0,1203
+1956,The King and I,0,1204
+1956,The Ten Commandments,0,1205
+1957,The Bridge on the River Kwai,1,1206
+1957,12 Angry Men,0,1207
+1957,Peyton Place,0,1208
+1957,Sayonara,0,1209
+1957,Witness for the Prosecution,0,1210
+1958,Gigi,1,1211
+1958,Auntie Mame,0,1212
+1958,Cat on a Hot Tin Roof,0,1213
+1958,The Defiant Ones,0,1214
+1958,Separate Tables,0,1215
+1959,Ben-Hur,1,1216
+1959,Anatomy of a Murder,0,1217
+1959,The Diary of Anne Frank,0,1218
+1959,The Nun's Story,0,1219
+1959,Room at the Top,0,1220
+1960,The Apartment,1,1221
+1960,The Alamo,0,1222
+1960,Elmer Gantry,0,1223
+1960,Sons and Lovers,0,1224
+1960,The Sundowners,0,1225
+1961,West Side Story,1,1226
+1961,Fanny,0,1227
+1961,The Guns of Navarone,0,1228
+1961,The Hustler,0,1229
+1961,Judgment at Nuremberg,0,1230
+1962,Lawrence of Arabia,1,1231
+1962,The Longest Day,0,1232
+1962,The Music Man,0,1233
+1962,Mutiny on the Bounty,0,1234
+1962,To Kill a Mockingbird,0,1235
+1963,Tom Jones,1,1236
+1963,America America,0,1237
+1963,Cleopatra,0,1238
+1963,How the West Was Won,0,1239
+1963,Lilies of the Field,0,1240
+1964,My Fair Lady,1,1241
+1964,Becket,0,1242
+1964,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,0,1243
+1964,Mary Poppins,0,1244
+1964,Zorba the Greek,0,1245
+1965,The Sound of Music,1,1246
+1965,Darling,0,1247
+1965,Doctor Zhivago,0,1248
+1965,Ship of Fools,0,1249
+1965,A Thousand Clowns,0,1250
+1966,A Man for All Seasons,1,1251
+1966,Alfie,0,1252
+1966,"The Russians Are Coming, the Russians Are Coming",0,1253
+1966,The Sand Pebbles,0,1254
+1966,Who's Afraid of Virginia Woolf?,0,1255
+1967,In the Heat of the Night,1,1256
+1967,Bonnie and Clyde,0,1257
+1967,Doctor Dolittle,0,1258
+1967,The Graduate,0,1259
+1967,Guess Who's Coming to Dinner,0,1260
+1968,Oliver!,1,1261
+1968,Funny Girl,0,1262
+1968,The Lion in Winter,0,1263
+1968,"Rachel, Rachel",0,1264
+1968,Romeo and Juliet,0,1265
+1969,Midnight Cowboy,1,1266
+1969,Anne of the Thousand Days,0,1267
+1969,Butch Cassidy and the Sundance Kid,0,1268
+1969,"Hello, Dolly!",0,1269
+1969,Z,0,1270
+1980,Ordinary People,1,1271
+1980,Coal Miner's Daughter,0,1272
+1980,The Elephant Man,0,1273
+1980,Raging Bull,0,1274
+1980,Tess,0,1275
+1981,Chariots of Fire,1,1276
+1981,Atlantic City,0,1277
+1981,On Golden Pond,0,1278
+1981,Raiders of the Lost Ark,0,1279
+1981,Reds,0,1280
+1982,Gandhi,1,1281
+1982,E.T. the Extra-Terrestrial,0,1282
+1982,Missing,0,1283
+1982,Tootsie,0,1284
+1982,The Verdict,0,1285
+1983,Terms of Endearment,1,1286
+1983,The Big Chill,0,1287
+1983,The Dresser,0,1288
+1983,The Right Stuff,0,1289
+1983,Tender Mercies,0,1290
+1984,Amadeus,1,1291
+1984,The Killing Fields,0,1292
+1984,A Passage to India,0,1293
+1984,Places in the Heart,0,1294
+1984,A Soldier's Story,0,1295
+1985,Out of Africa,1,1296
+1985,The Color Purple,0,1297
+1985,Kiss of the Spider Woman,0,1298
+1985,Prizzi's Honor,0,1299
+1985,Witness,0,1300
+1986,Platoon,1,1301
+1986,Children of a Lesser God,0,1302
+1986,Hannah and Her Sisters,0,1303
+1986,The Mission,0,1304
+1986,A Room with a View,0,1305
+1987,The Last Emperor,1,1306
+1987,Broadcast News,0,1307
+1987,Fatal Attraction,0,1308
+1987,Hope and Glory,0,1309
+1987,Moonstruck,0,1310
+1988,Rain Man,1,1311
+1988,The Accidental Tourist,0,1312
+1988,Dangerous Liaisons,0,1313
+1988,Mississippi Burning,0,1314
+1988,Working Girl,0,1315
+1989,Driving Miss Daisy,1,1316
+1989,Born on the Fourth of July,0,1317
+1989,Dead Poets Society,0,1318
+1989,Field of Dreams,0,1319
+1989,My Left Foot,0,1320
+1990,Dances with Wolves,1,1321
+1990,Awakenings,0,1322
+1990,Ghost,0,1323
+1990,The Godfather Part III,0,1324
+1990,Goodfellas,0,1325
+1991,The Silence of the Lambs,1,1326
+1991,Beauty and the Beast,0,1327
+1991,Bugsy,0,1328
+1991,JFK,0,1329
+1991,The Prince of Tides,0,1330
+1992,Unforgiven,1,1331
+1992,The Crying Game,0,1332
+1992,A Few Good Men,0,1333
+1992,Howards End,0,1334
+1992,Scent of a Woman,0,1335
+1993,Schindler's List,1,1336
+1993,The Fugitive,0,1337
+1993,In the Name of the Father,0,1338
+1993,The Piano,0,1339
+1993,The Remains of the Day,0,1340
+1994,Forrest Gump,1,1341
+1994,Four Weddings and a Funeral,0,1342
+1994,Pulp Fiction,0,1343
+1994,Quiz Show,0,1344
+1994,The Shawshank Redemption,0,1345
+1995,Braveheart,1,1346
+1995,Apollo 13,0,1347
+1995,Babe,0,1348
+1995,The Postman (Il Postino),0,1349
+1995,Sense and Sensibility,0,1350
+1996,The English Patient,1,1351
+1996,Fargo,0,1352
+1996,Jerry Maguire,0,1353
+1996,Secrets & Lies,0,1354
+1996,Shine,0,1355
+1997,Titanic,1,1356
+1997,As Good as It Gets,0,1357
+1997,The Full Monty,0,1358
+1997,Good Will Hunting,0,1359
+1997,L.A. Confidential,0,1360
+1998,Shakespeare in Love,1,1361
+1998,Elizabeth,0,1362
+1998,Life Is Beautiful,0,1363
+1998,Saving Private Ryan,0,1364
+1998,The Thin Red Line,0,1365
+1999,American Beauty,1,1366
+1999,The Cider House Rules,0,1367
+1999,The Green Mile,0,1368
+1999,The Insider,0,1369
+1999,The Sixth Sense,0,1370
+2000,Gladiator,1,1371
+2000,Chocolat,0,1372
+2000,"Crouching Tiger, Hidden Dragon",0,1373
+2000,Erin Brockovich,0,1374
+2000,Traffic,0,1375
+2001,A Beautiful Mind,1,1376
+2001,Gosford Park,0,1377
+2001,In the Bedroom,0,1378
+2001,The Lord of the Rings: The Fellowship of the Ring,0,1379
+2001,Moulin Rouge!,0,1380
+2002,Chicago,1,1381
+2002,Gangs of New York,0,1382
+2002,The Hours,0,1383
+2002,The Lord of the Rings: The Two Towers,0,1384
+2002,The Pianist,0,1385
+2003,The Lord of the Rings: The Return of the King,1,1386
+2003,Lost in Translation,0,1387
+2003,Master and Commander: The Far Side of the World,0,1388
+2003,Mystic River,0,1389
+2003,Seabiscuit,0,1390
+2004,Million Dollar Baby,1,1391
+2004,The Aviator,0,1392
+2004,Finding Neverland,0,1393
+2004,Ray,0,1394
+2004,Sideways,0,1395
+2005,Crash,1,1396
+2005,Brokeback Mountain,0,1397
+2005,Capote,0,1398
+2005,"Good Night, and Good Luck",0,1399
+2005,Munich,0,1400
+2006,The Departed,1,1401
+2006,Babel,0,1402
+2006,Letters from Iwo Jima,0,1403
+2006,Little Miss Sunshine,0,1404
+2006,The Queen,0,1405
+2007,No Country for Old Men,1,1406
+2007,Atonement,0,1407
+2007,Juno,0,1408
+2007,Michael Clayton,0,1409
+2007,There Will Be Blood,0,1410
+2008,Slumdog Millionaire,1,1411
+2008,The Curious Case of Benjamin Button,0,1412
+2008,Frost/Nixon,0,1413
+2008,Milk,0,1414
+2008,The Reader,0,1415
+2009,The Hurt Locker,1,1416
+2009,Avatar,0,1417
+2009,The Blind Side,0,1418
+2009,District 9,0,1419
+2009,An Education,0,1420
+2009,Inglourious Basterds,0,1421
+2009,Precious: Based on the Novel 'Push' by Sapphire,0,1422
+2009,A Serious Man,0,1423
+2009,Up,0,1424
+2009,Up in the Air,0,1425
+2010,The King's Speech,1,1426
+2010,127 Hours,0,1427
+2010,Black Swan,0,1428
+2010,The Fighter,0,1429
+2010,Inception,0,1430
+2010,The Kids Are All Right,0,1431
+2010,The Social Network,0,1432
+2010,Toy Story 3,0,1433
+2010,True Grit,0,1434
+2010,Winter's Bone,0,1435
+2011,The Artist,1,1436
+2011,The Descendants,0,1437
+2011,Extremely Loud & Incredibly Close,0,1438
+2011,The Help,0,1439
+2011,Hugo,0,1440
+2011,Midnight in Paris,0,1441
+2011,Moneyball,0,1442
+2011,The Tree of Life,0,1443
+2011,War Horse,0,1444
+2012,Argo,1,1445
+2012,Amour,0,1446
+2012,Beasts of the Southern Wild,0,1447
+2012,Django Unchained,0,1448
+2012,Les Misérables,0,1449
+2012,Life of Pi,0,1450
+2012,Lincoln,0,1451
+2012,Silver Linings Playbook,0,1452
+2012,Zero Dark Thirty,0,1453
+2013,12 Years a Slave,1,1454
+2013,American Hustle,0,1455
+2013,Captain Phillips,0,1456
+2013,Dallas Buyers Club,0,1457
+2013,Gravity,0,1458
+2013,Her,0,1459
+2013,Nebraska,0,1460
+2013,Philomena,0,1461
+2013,The Wolf of Wall Street,0,1462
+2014,Birdman or (The Unexpected Virtue of Ignorance),1,1463
+2014,American Sniper,0,1464
+2014,Boyhood,0,1465
+2014,The Grand Budapest Hotel,0,1466
+2014,The Imitation Game,0,1467
+2014,Selma,0,1468
+2014,The Theory of Everything,0,1469
+2014,Whiplash,0,1470
+2015,Spotlight,1,1471
+2015,The Big Short,0,1472
+2015,Bridge of Spies,0,1473
+2015,Brooklyn,0,1474
+2015,Mad Max: Fury Road,0,1475
+2015,The Martian,0,1476
+2015,The Revenant,0,1477
+2015,Room,0,1478
+2016,Moonlight,1,1479
+2016,Arrival,0,1480
+2016,Fences,0,1481
+2016,Hacksaw Ridge,0,1482
+2016,Hell or High Water,0,1483
+2016,Hidden Figures,0,1484
+2016,La La Land,0,1485
+2016,Lion,0,1486
+2016,Manchester by the Sea,0,1487
+2017,The Shape of Water,1,1488
+2017,Call Me by Your Name,0,1489
+2017,Darkest Hour,0,1490
+2017,Dunkirk,0,1491
+2017,Get Out,0,1492
+2017,Lady Bird,0,1493
+2017,Phantom Thread,0,1494
+2017,The Post,0,1495
+2017,"Three Billboards Outside Ebbing, Missouri",0,1496
+2018,Green Book,1,1497
+2018,Black Panther,0,1498
+2018,BlacKkKlansman,0,1499
+2018,Bohemian Rhapsody,0,1500
+2018,The Favourite,0,1501
+2018,Roma,0,1502
+2018,A Star Is Born,0,1503
+2018,Vice,0,1504
+2019,Parasite,1,1505
+2019,Ford v Ferrari,0,1506
+2019,The Irishman,0,1507
+2019,Jojo Rabbit,0,1508
+2019,Joker,0,1509
+2019,Little Women,0,1510
+2019,Marriage Story,0,1511
+2019,1917,0,1512
+2019,Once Upon a Time in Hollywood,0,1513
